@@ -1,22 +1,30 @@
-import React from "react"; 
+import React from "react";
 
-import Primeiro from "./components/basics/Primeiro"; 
-import ComParametro from "./components/basics/ComParametro"; 
-import Fragmento from "./components/basics/Fragmento"; 
-import Aleatorio from "./components/basics/Aleatorio"; 
+import Card from "./components/layout/Card";
+import Aleatorio from "./components/basics/Aleatorio";
+import Fragmento from "./components/basics/Fragmento";
+import ComParametro from "./components/basics/ComParametro";
+import Primeiro from "./components/basics/Primeiro";
 
-const tag = <strong>OLÁ REACT!!!</strong>
+const tag = <h2><strong>BEM VINDO REACT!!!</strong></h2>
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
     <div id="app">
         {tag}
-        <p>Fundamentos</p>
-        <br />
+        <h3>Fundamentos</h3>
         <hr />
-        <Aleatorio min={1} max={10} />
-        <Fragmento />
-        <ComParametro titulo="Segundo Componente" aluno="Rita" nota={9.3} />
-        <Primeiro></Primeiro>
+        <Card titulo="Desafio Aleatório">
+            <Aleatorio min={1} max={10} />
+        </Card>
+        <Card titulo="Fragmento">
+            <Fragmento />
+        </Card>
+        <Card titulo="Segundo Exercicio">
+            <ComParametro titulo="Segundo Componente" aluno="Rita" nota={9.3} />
+        </Card>
+        <Card titulo="Primeiro Componente">
+            <Primeiro></Primeiro>
+        </Card>
     </div>
 ); 

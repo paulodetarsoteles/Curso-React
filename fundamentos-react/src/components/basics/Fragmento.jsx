@@ -3,7 +3,7 @@ import React from "react";
 export default function Fragmento(props) {
     return (
         <>
-            <h2>Fragmento</h2>
+            <h3>Fragmento</h3>
             <p>Cuidado com esse erro!</p>
         </>
     ); 
