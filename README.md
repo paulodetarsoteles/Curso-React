@@ -1,2 +1,2 @@
 # Curso-React
-Repositório do curso feito pela Cod3r
+Repositório do curso React (Javascript) feito pela Cod3r na Udemy
